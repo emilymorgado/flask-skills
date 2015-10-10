@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Skills-HTML-CSS</title>
+        <link rel="stylesheet" href="static/styles.css">
+    </head>
+    <body>
+        <!-- your html goes here -->
+
+        <!-- Heading/Welcoming -->
+        <section id="intro-border">
+        <h1>Ubermelon Careers</h1>
+        <p>We are pleased you want to work with us! Please fill our the following so we can help you find your dream position.</p>
+        </section>
+
+        <!--Their first and last name (as separate fields),-->
+
+        <form method="POST" action="/application">
+        <section>
+            First Name: <input name="first-name" class="yellow" placeholder="Enter Here">
+            <span id="last-name">Last Name: <span><input name="last-name" class="yellow" placeholder="Enter Here">
+        </section>
+        
+        <!-- Their salary requirement as a number. -->
+        <section>
+            What is your salary requirement?
+            <input name="salary" class="yellow" placeholder="Enter a whole number">
+        </section>
+        
+        <!--Which job they are applying for, from a list of: -->
+        <section>   
+            <select name="position">
+                To which position are you applying?
+                <option value="software engineer">Software Engineer</option>
+                <option value="QA engineer">QA Engineer</option>
+                <option value="product manager">Product Manager</option>
+            </select>
+        </section>
+        
+        <section>
+            <input type="submit" value="submit" class="yellow">
+        </section>
+        </form>
+    </body>
+</html>
